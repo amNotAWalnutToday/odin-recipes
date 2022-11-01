@@ -13,7 +13,7 @@ body{
 }
 
 /* Heading & Basic Text style */
-h1, h2 {
+h1, h2, table {
     font-family: cursive, arial, sans-serif;
     text-align: center;
 }
@@ -30,6 +30,12 @@ h2, .header {
 
 .todo {
     margin: 2.5rem 25vw 0 25vw;
+    background-color: linen;
+    border: 2px solid brown;
+}
+
+.todo li {
+    margin-left: 2rem;
 }
 
 .todo li, img {
@@ -37,10 +43,33 @@ h2, .header {
     margin-bottom: 1rem;
 }
 
+/*Table Style*/
+table {
+    background-color:linen;
+    border: 2px solid brown;
+}
+
+td {
+    height: 25px;
+    width: min(20vw,150px);
+    border-right: 1px solid brown;
+    border-left: 1px solid brown;
+    border-top: 1px solid brown;
+}
+
+.tbl-top td {
+    border-top: 1px solid brown;
+}
+
+.tbl-bottom td{
+    border-bottom: 1px solid brown;
+    padding: 10px 0 1rem 0;
+}
+
 /*Image Style*/
 img {
     border-radius: 5%;
-    border:2px solid rgb(238, 59, 59)
+    border:2px solid brown;
 }
 
 /*Nav Bar Style*/
