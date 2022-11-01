@@ -13,13 +13,17 @@ body{
 }
 
 /* Heading & Basic Text style */
-h1, h2, table {
+h1, h2, h3, table {
     font-family: cursive, arial, sans-serif;
     text-align: center;
 }
 
-h2, .header {
+h2 , .header {
     border-bottom: 2px double brown;
+}
+
+h3 {
+    border-bottom: 1px solid brown;
 }
 
 .header {
@@ -36,6 +40,7 @@ h2, .header {
 
 .todo li {
     margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .todo li, img {
