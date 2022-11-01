@@ -5,7 +5,8 @@
 
 * {
     margin: 0;
-    padding: 0;
+    padding: 0; 
+    scroll-behavior: smooth;
 }
 
 body{
@@ -26,10 +27,26 @@ h3 {
     border-bottom: 1px solid brown;
 }
 
-.header {
+.header, .footer {
     background-color: rgb(211, 219, 163);
     height: 7.5vh;
     align-items: center;
+}
+
+.footer {
+    flex-direction: column;
+    width: 100%;
+    border-top: 2px solid brown;
+}
+
+.index.footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.recipe.footer {
+    position: relative;
+    margin-top: 1rem;
 }
 
 .todo {
@@ -78,7 +95,7 @@ img {
 }
 
 /*Nav Bar Style*/
-a {
+ .nav a {
     background-color: linen;
     color: brown;
     text-decoration: none;
@@ -91,7 +108,7 @@ a:hover {
     color: rgb(238, 59, 59)
 }
 
-.nav, .header, .image, .table {
+.nav, .header, .image, .table, .footer {
     display: flex;
     justify-content: center;
 }
@@ -105,3 +122,8 @@ a:hover {
     transform: scaleX(1.05) scaleY(1.05);
 }
 
+button {
+    position:fixed;
+    top:0;
+    right: 0;
+}
