@@ -13,16 +13,34 @@ body{
 }
 
 /* Heading & Basic Text style */
-h1 {
+h1, h2 {
     font-family: cursive, arial, sans-serif;
     text-align: center;
 }
 
+h2, .header {
+    border-bottom: 2px double brown;
+}
+
 .header {
     background-color: rgb(211, 219, 163);
-    border-bottom: 2px double brown;
     height: 7.5vh;
     align-items: center;
+}
+
+.todo {
+    margin: 2.5rem 25vw 0 25vw;
+}
+
+.todo li, img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+/*Image Style*/
+img {
+    border-radius: 5%;
+    border:2px solid rgb(238, 59, 59)
 }
 
 /*Nav Bar Style*/
@@ -39,17 +57,17 @@ a:hover {
     color: rgb(238, 59, 59)
 }
 
-.nav, .header {
+.nav, .header, .image, .table {
     display: flex;
     justify-content: center;
 }
 
-li {
+.button {
     margin-top: 2rem;
     list-style: none;
 }
 
-li:hover {
+.button:hover {
     transform: scaleX(1.05) scaleY(1.05);
 }
 
