@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,10 +63,28 @@
             <li>Bring the vegetable broth to a boil in a saucepan. Add the mushrooms, reduce heat to low, and simmer 4 minutes. Stir the miso paste and soy sauce together in a small bowl; add to the broth along with the tofu and continue cooking for 1 minute more. Pour the soup into bowls and top with the green onions to serve.</li>
         </ol>
     </div>
-    <button class="nav"><a href="#header">Return to Top</a> </button>
+    <button class="nav return"><a href="#header">Return to Top</a> </button>
+    <button class="theme" type="button">Light/Dark</button>
     <div class="recipe footer">
         <p>All recipes on this site are for learning purposes and are from</p>
         <p><a href="https://www.allrecipes.com/">allrecipes.com</a></p>
     </div>
 </body>
+<script type="text/javascript">
+    let dark = false;
+
+    const theme = document.querySelector('.theme')
+    theme.addEventListener('click',changeTheme)
+
+    function changeTheme(e) {
+        const mode = document.querySelector('.html')
+        if(!dark){
+            mode.classList.add('dark');
+            dark = true;
+        }else {
+            mode.classList.remove('dark')
+            dark = false;
+        }
+    }
+</script>
 </html>
