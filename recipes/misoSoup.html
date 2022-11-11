@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../styles.css">
     <title>Miso Soup With Shiitake Mushrooms</title>
+    <script src="../theme.js" defer></script>
 </head>
 <body>
     <div id="header" class="header">
@@ -23,21 +24,21 @@
                 <tr class="tbl-top">
                     <td><strong>Prep Time:</strong></td>
                     <td><strong>Cook Time:</strong></td>
-                    <td><strong>Total Time:</strong></td>
+                    <td colspan="2"><strong>Total Time:</strong></td>
                 </tr>
                 <tr class="tbl-bottom">
                     <td>10 mins</td>
                     <td>10 mins</td>
-                    <td>20 mins</td>
+                    <td colspan="2">20 mins</td>
                 </tr>
                 <tr class="tbl-top">
-                    <td><strong>Servings:</strong></td>
+                    <td colspan="4"><strong>Servings:</strong></td>
                 </tr>
                 <tr class="tbl-bottom">
-                    <td>4</td>
+                    <td colspan="4">4</td>
                 </tr>
                 <tr>
-                    <td><strong>Nutrional Facts:</strong></td>
+                    <td colspan="4"><strong>Nutrional Facts:</strong></td>
                 </tr>
                 <tr class="tbl-bottom tbl-top">
                     <td><em><strong>Calories:</strong> 92</em></td>
@@ -70,21 +71,4 @@
         <p><a href="https://www.allrecipes.com/">allrecipes.com</a></p>
     </div>
 </body>
-<script type="text/javascript">
-    let dark = false;
-
-    const theme = document.querySelector('.theme')
-    theme.addEventListener('click',changeTheme)
-
-    function changeTheme(e) {
-        const mode = document.querySelector('.html')
-        if(!dark){
-            mode.classList.add('dark');
-            dark = true;
-        }else {
-            mode.classList.remove('dark')
-            dark = false;
-        }
-    }
-</script>
 </html>

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Odin Recipes</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="theme.js" defer></script>
 </head>
 <body>
     <div id="header" class="header">
@@ -24,21 +25,4 @@
         <p><a href="https://www.allrecipes.com/">allrecipes.com</a></p>
     </div>
 </body>
-<script type="text/javascript">
-    let dark = false;
-
-    const theme = document.querySelector('.theme')
-    theme.addEventListener('click',changeTheme)
-
-    function changeTheme(e) {
-        const mode = document.querySelector('.html')
-        if(!dark){
-            mode.classList.add('dark');
-            dark = true;
-        }else {
-            mode.classList.remove('dark')
-            dark = false;
-        }
-    }
-</script>
 </html>
